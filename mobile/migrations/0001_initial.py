@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('screen_size', models.FloatField()),
                 ('price', models.FloatField()),
                 ('release_data', models.DateTimeField()),
-                ('img', models.ImageField(upload_to='/mobiles/')),
+                ('img', models.ImageField(upload_to='/mobile/')),
             ],
         ),
     ]

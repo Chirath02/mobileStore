@@ -19,6 +19,6 @@ class Mobile(models.Model):
     # Date is set manually
     release_data = models.DateTimeField(auto_now=False, auto_now_add=False)
 
-    # images are uploaded into /media/mobiles/
+    # images are uploaded into /media/mobile/
     img = models.ImageField()
 
