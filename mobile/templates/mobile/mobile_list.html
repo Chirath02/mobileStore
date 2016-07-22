@@ -1,14 +1,18 @@
 {% extends 'mobile/base.html' %}
 
 {% block body %}
+<div class="container-fluid">
+    <div class="row">
     {% for mobile in object_list %}
-        <ul>
-            <img src="{{ mobile.img.url }}"/>
-            <li>{{ mobile.model_name }}</li>
-            <li>{{ mobile.brand_name }}</li>
-            <li> Battery : {{ mobile.battery_capacity }} mah</li>
-            <li>Secondary camera : {{ mobile.front_cam }} MP</li>
-            <li>Primary camera : {{ mobile.back_cam }} MP</li>
-        </ul>
+        <div class="col-md-2 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+                <img src="{{ mobile.img.url }}"/>
+            </div>
+            <div class="" style="text-align: center">
+                <h4>{{ mobile.model_name }}</h4>
+            <div/>
+        </div>
     {% endfor %}
+    </div>
+</div>
 {% endblock %}
