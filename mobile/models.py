@@ -1,3 +1,5 @@
+from audioop import reverse
+
 from django.db import models
 
 class Mobile(models.Model):
@@ -21,4 +23,8 @@ class Mobile(models.Model):
 
     # images are uploaded into /media/mobile/
     img = models.ImageField()
+
+    def get_absolute_url(self):
+        return reverse('mobile_detail', keywargs={'pk': self.pk})
+
 

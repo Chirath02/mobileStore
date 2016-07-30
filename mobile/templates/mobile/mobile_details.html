@@ -1,0 +1,65 @@
+{% extends 'mobile/base.html' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 mobile-name">
+            <h3>{{ mobile.model_name }}</h3>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 mobile-details">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <div class="thumbnail">
+                    <img src="{{ mobile.img.url }}"/>
+                </div>
+            </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 mobile-text-details" >
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <h4>
+                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+
+                            {{ mobile.release_data }}
+                        </h4>
+
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <h4>Remaining : {{ mobile.quantity }}</h4>
+                        <br>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3 mobile-details-bottom">
+                        <p><span class="glyphicon glyphicon-scale" aria-hidden="true"></span></p>
+                        <h4>
+                            {{ mobile.battery_capacity }} mah
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 mobile-details-bottom">
+                        <p><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></p>
+                        <h4>
+                            {{ mobile.back_cam }} mp
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 mobile-details-bottom">
+                        <p><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></p>
+                        <h4>
+                            Ram: {{ mobile.ram }}
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 mobile-details-bottom">
+                        <p><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></p>
+                        <h4>
+                            Rs.{{ mobile.price }}
+                        </h4>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 mobile-end">
+            <h3>{{ mobile.model_name }}</h3>
+        </div>
+</div>
+{% endblock %}

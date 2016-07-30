@@ -1,3 +1,68 @@
 body {
 
 }
+
+.mobile-name {
+    background-color:#eb9381;
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#eb9381, endColorstr=#fcecb6);
+ background-image:-moz-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-webkit-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-o-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-ms-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+ background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#eb9381), color-stop(40%,#fcecb6),color-stop(63%,#ffdd8c),color-stop(100%,#edf757));    border-left: solid 1px #c0c0c0;
+    border-top: solid 1px #c0c0c0;
+    border-right: solid 1px #c0c0c0;
+    margin-left: 50px;
+    width: calc(100% - 100px);
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
+
+.mobile-end {
+    background-color:#eb9381;
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#eb9381, endColorstr=#fcecb6);
+ background-image:-moz-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-webkit-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-o-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+background-image:-ms-linear-gradient(left, #eb9381 0%, #fcecb6 40%,#ffdd8c 63%,#edf757 100%);
+ background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#eb9381), color-stop(40%,#fcecb6),color-stop(63%,#ffdd8c),color-stop(100%,#edf757));border-left: solid 1px #c0c0c0;
+    border-left: solid 1px #c0c0c0;
+    border-right: solid 1px #c0c0c0;
+    margin-left: 50px;
+    width: calc(100% - 100px);
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+}
+
+.mobile-details {
+    background-color:#ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#ffffff, endColorstr=#ffffff);
+    background-image:-moz-linear-gradient(left, #ffffff 0%, #ffffff 40%,#f7ff8c 63%,#ffabab 100%);
+    background-image:linear-gradient(left, #ffffff 0%, #ffffff 40%,#f7ff8c 63%,#ffabab 100%);
+    background-image:-webkit-linear-gradient(left, #ffffff 0%, #ffffff 40%,#f7ff8c 63%,#ffabab 100%);
+    background-image:-o-linear-gradient(left, #ffffff 0%, #ffffff 40%,#f7ff8c 63%,#ffabab 100%);
+    background-image:-ms-linear-gradient(left, #ffffff 0%, #ffffff 40%,#f7ff8c 63%,#ffabab 100%);
+    background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#ffffff), color-stop(40%,#ffffff),color-stop(63%,#f7ff8c),color-stop(100%,#ffabab));
+    border: solid 1px #c0c0c0;
+    margin-left: 50px;
+    width: calc(100% - 100px);
+    padding: 20px;
+}
+
+.mobile-text-details {
+
+}
+
+.mobile-details-bottom {
+    margin-top: 12%;
+}
+
+.glyphicon {
+    font-size: 40px;
+}
+
+.glyphicon.glyphicon-calendar {
+    font-size: 1em;
+}
