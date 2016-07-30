@@ -1,5 +1,8 @@
 {% extends 'mobile/base.html' %}
 
+{% block home %}active{% endblock %}
+{% block add %}{% endblock %}
+
 {% block body %}
 <div class="container-fluid">
     <div class="row">
@@ -7,15 +10,16 @@
         <div class="col-md-2 col-sm-4 col-xs-4">
             <div class="thumbnail">
                 <a href="{% url 'mobile_detail' mobile.id  %} ">
-                    <img src="{{ mobile.img.url }}"/>
+                    <img class="mobile_img" style="height: 250px;" src="{{ mobile.img.url }}"/>
                 </a>
             </div>
 
             <div class="" style="text-align: center">
                 <h4>{{ mobile.model_name }}</h4>
-            <div/>
+            </div>
         </div>
     {% endfor %}
     </div>
+</div>
 </div>
 {% endblock %}

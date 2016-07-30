@@ -14,5 +14,5 @@ class MobileDetail(DetailView):
 
 class AddMobileView(CreateView):
     model = Mobile
-    fields = ['model_name', 'battery_capacity', 'quantity', 'back_cam', 'ram', 'price', 'release_data', 'img']
+    fields = ['model_name', 'battery_capacity', 'quantity', 'back_cam', 'ram', 'price', 'img']
 
