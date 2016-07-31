@@ -25,3 +25,4 @@ class Mobile(models.Model):
     def get_absolute_url(self):
         return reverse('mobile_detail', keywargs={'pk': self.pk})
 
+
