@@ -30,8 +30,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="{% block home %}active{% endblock %}"><a href="{% url 'home' %}">Mobiles <span class="sr-only">(current)</span></a></li>
-        <li class="{% block add %}{% endblock %}"><a href="{% url 'add_mobile' %}">Add <span class="sr-only">(current)</span></a></li>
+          <li class="{% block home %}active{% endblock %}"><a href="{% url 'home' %}">Mobiles <span class="sr-only">(current)</span></a></li>
+          <li class="{% block add %}{% endblock %}"><a href="{% url 'add_mobile' %}">Add <span class="sr-only">(current)</span></a></li>
+          {% if user.is_authenticated %}
+            <li class="{% block cart %}{% endblock %}">
+                <a href="">Cart <span class="sr-only">(current)</span></a>
+            </li>
+           {% endif %}
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -39,9 +44,15 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
+     {% if user.is_authenticated %}
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="active" href="">{{ request.user.username }}</a></li>
+        </ul>
+     {% else %}
       <ul class="nav navbar-nav navbar-right">
             <li><a class="active" href="{%  url 'signUp' %}">SignUp/Login</a></li>
       </ul>
+     {% endif %}
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
