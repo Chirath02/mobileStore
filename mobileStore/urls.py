@@ -17,13 +17,14 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from mobile.views import IndexView, MobileDetail, AddMobileView
+from mobile.views import IndexView, MobileDetail, AddMobileView, SignupView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', IndexView.as_view(), name='home'),
     url(r'^mobile/(?P<pk>[0-9]+)/$', MobileDetail.as_view(), name="mobile_detail"),
-    url(r'^mobile/add/$', AddMobileView.as_view(), name='add_mobile')
+    url(r'^mobile/add/$', AddMobileView.as_view(), name='add_mobile'),
+    url(r'^signup/$', SignupView.as_view(), name='signUp')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

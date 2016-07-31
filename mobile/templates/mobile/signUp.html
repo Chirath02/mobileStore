@@ -2,5 +2,38 @@
 
 {% block title %}SignUp{% endblock %}
 {% block home %}{% endblock %}
-{% block  %}{% endblock %}
-{% block home %}{% endblock %}
+{% block add %}{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h3>SignUp</h3>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <form class="form-group-lg" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% include 'mobile/form_template.html' %}
+
+                            <div class="col-md-offset-4 col-md-3 sumbit-button">
+                                    <button class="btn btn-success" type="submit">SignUp</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

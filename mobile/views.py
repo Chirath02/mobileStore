@@ -23,7 +23,7 @@ class AddMobileView(CreateView):
 
 class SignupView(View):
     form_class = UserForm
-    template_name = 'signUp.html'
+    template_name = 'mobile/signUp.html'
 
 
     def get(self, request):
